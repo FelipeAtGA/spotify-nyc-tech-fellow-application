@@ -1,0 +1,20 @@
+{
+  "name": "spotify-nyc-tech-fellow-application",
+  "version": "1.0.0",
+  "description": "Spotify New York City Technology Fellowship Program application. The questions in this section test general programming knowledge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeAtGA/spotify-nyc-tech-fellow-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeAtGA/spotify-nyc-tech-fellow-application/issues"
+  },
+  "homepage": "https://github.com/FelipeAtGA/spotify-nyc-tech-fellow-application#readme"
+}
