@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/FelipeAtGA/spotify-nyc-tech-fellow-application/issues"
   },
-  "homepage": "https://github.com/FelipeAtGA/spotify-nyc-tech-fellow-application#readme"
+  "homepage": "https://github.com/FelipeAtGA/spotify-nyc-tech-fellow-application#readme",
+  "devDependencies": {
+    "webpack": "^4.12.0"
+  }
 }
