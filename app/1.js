@@ -9,7 +9,7 @@ const sortByStrings = function(s, t) {
     let letter = sortAs[i];
 
     // second loop will check for each letter
-    for (let i =0; i < sortBy.length; i += 1) {
+    for (let i =0; i <= sortAs.length; i += 1) {
       // store a letter in a variable
       let letter2 = sortBy[i];
 
@@ -24,7 +24,7 @@ const sortByStrings = function(s, t) {
   //return (`${sortAs}, ${sortBy}`);
 };
 
-const output = sortByStrings('weather', 'car');
+const output = sortByStrings('weather', 'therapywwt');
 console.log(output);
 
 export default sortByStrings;
