@@ -1,3 +1,5 @@
+let newWord = '';
+
 const sortByStrings = function(s, t) {
   let sortAs = s.split('');
   let sortBy = t.split('');
@@ -15,8 +17,7 @@ const sortByStrings = function(s, t) {
 
       // compare each letter
       if (letter === letter2) {
-        count += 1;
-        console.log('this is letter 2 ', letter2)
+        newWord += letter2;
       }
     }
   }
@@ -26,6 +27,6 @@ const sortByStrings = function(s, t) {
 };
 
 const output = sortByStrings('weather', 'therapyw');
-console.log(output);
+console.log(newWord);
 
 export default sortByStrings;
