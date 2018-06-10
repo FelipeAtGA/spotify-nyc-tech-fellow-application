@@ -1,8 +1,9 @@
 let newWord = ''; // this variable collects the desired output
 
 const sortByStrings = function(s, t) {
-  let sortAs = s.split('');
-  let sortBy = t.split('');
+  let sortAs = s.split(''),
+      sortBy = t.split('');
+
   // loop through each word and compare them
   for (let i = 0; i < sortBy.length; i += 1) {
     // store a letter in variable
