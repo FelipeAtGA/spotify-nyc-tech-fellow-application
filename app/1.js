@@ -6,16 +6,17 @@ const sortByStrings = function(s, t) {
   // loop through each word and compare them
   for (let i = 0; i < sortAs.length; i += 1) {
     // store a letter in variable
-    const letter = sortAs[i];
+    const letter = sortBy[i];
 
     // second loop will check for each letter
     for (let i =0; i <= sortAs.length; i += 1) {
       // store a letter in a variable
-      const letter2 = sortBy[i];
+      const letter2 = sortAs[i];
 
       // compare each letter
       if (letter === letter2) {
         count += 1;
+        console.log('this is letter 2 ', letter2)
       }
     }
   }
