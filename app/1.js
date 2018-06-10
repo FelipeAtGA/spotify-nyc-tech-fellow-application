@@ -23,9 +23,6 @@ const sortByStrings = function(s, t) {
       }
     }
   }
-
-  return count;
-  //return (`${sortAs}, ${sortBy}`);
 };
 
 sortByStrings('weather', 'therapyw');
