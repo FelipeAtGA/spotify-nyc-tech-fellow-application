@@ -4,7 +4,7 @@ const sortByStrings = function(s, t) {
   let count = 0;
 
   // loop through each word and compare them
-  for (let i = 0; i < sortAs.length; i += 1) {
+  for (let i = 0; i < sortBy.length; i += 1) {
     // store a letter in variable
     const letter = sortBy[i];
 
@@ -25,7 +25,7 @@ const sortByStrings = function(s, t) {
   //return (`${sortAs}, ${sortBy}`);
 };
 
-const output = sortByStrings('weather', 'therapywwt');
+const output = sortByStrings('weather', 'therapyw');
 console.log(output);
 
 export default sortByStrings;
