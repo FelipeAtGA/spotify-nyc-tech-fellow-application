@@ -6,12 +6,12 @@ const sortByStrings = function(s, t) {
   // loop through each word and compare them
   for (let i = 0; i < sortAs.length; i += 1) {
     // store a letter in variable
-    let letter = sortAs[i];
+    const letter = sortAs[i];
 
     // second loop will check for each letter
     for (let i =0; i <= sortAs.length; i += 1) {
       // store a letter in a variable
-      let letter2 = sortBy[i];
+      const letter2 = sortBy[i];
 
       // compare each letter
       if (letter === letter2) {
