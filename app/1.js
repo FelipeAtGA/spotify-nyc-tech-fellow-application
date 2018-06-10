@@ -28,7 +28,7 @@ const sortByStrings = function(s, t) {
   //return (`${sortAs}, ${sortBy}`);
 };
 
-const output = sortByStrings('weather', 'therapyw');
+sortByStrings('weather', 'therapyw');
 console.log(newWord);
 
 export default sortByStrings;
