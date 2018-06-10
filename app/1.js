@@ -17,6 +17,8 @@ const sortByStrings = function(s, t) {
 
       // compare each letter
       if (letter === letter2) {
+
+        // concatenate new word as letters show up
         newWord += letter2;
       }
     }
