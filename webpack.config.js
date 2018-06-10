@@ -6,5 +6,24 @@ module.exports = {
     path: path.resolve(__dirname, './build'),
     filename: 'bundle.js',
   },
+
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ]
+  },
+
+  devServer: {
+    port: 3000,
+    contentBase: './build',
+    inline: true,
+  },
+
   mode: 'development',
 }
