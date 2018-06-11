@@ -9,7 +9,12 @@ const decodeString = function(s) {
 
     // eliminate brackets
     if (char !== '[' && char !== ']') {
-      console.log(char);
+
+      // separate first k times
+      if ( !isNaN(char) ) {
+        console.log (i,char);
+      }
+      //console.log(char);
     }
   }
 };
