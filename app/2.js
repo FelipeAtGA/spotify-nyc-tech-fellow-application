@@ -13,8 +13,9 @@ const decodeString = function(s) {
       // separate first k times
       if ( !isNaN(char) ) {
         console.log (i,char);
+      } else if (char.match(/^[A-Za-z]+$/)) {
+        console.log(i,char);
       }
-      //console.log(char);
     }
   }
 };
