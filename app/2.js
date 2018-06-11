@@ -28,10 +28,18 @@ const decodeString = function(s) {
   }
 };
 
+const createEncodedString = function(arr) {
+
+  // loop over the array
+  for (let i = 0; i < arr[0]; i+= 1) {
+    console.log(i, arr[1]);
+  }
+}
+
 decodeString('4[ab]');
 
 // add the made encoded_string to array
 charHolder.push(tempString);
-console.log(charHolder);
+createEncodedString(charHolder);
 
 export default decodeString;
