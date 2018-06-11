@@ -13,3 +13,5 @@ const decodeString = function(s) {
     }
   }
 };
+
+export default decodeString;
