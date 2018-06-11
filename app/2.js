@@ -5,11 +5,11 @@ const decodeString = function(s) {
   for(let i = 0; i < s.length; i += 1) {
 
     // assign character to a variable
-    let letter = s[i];
+    let char = s[i];
 
     // eliminate brackets
-    if (letter !== '[' && letter !== ']') {
-      console.log(letter);
+    if (char !== '[' && char !== ']') {
+      console.log(char);
     }
   }
 };
