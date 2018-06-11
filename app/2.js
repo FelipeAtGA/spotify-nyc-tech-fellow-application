@@ -29,11 +29,15 @@ const decodeString = function(s) {
 };
 
 const createEncodedString = function(arr) {
+  // holds the encoded string
+  let encodedString = '';
 
   // loop over the array
   for (let i = 0; i < arr[0]; i+= 1) {
-    console.log(i, arr[1]);
+    encodedString += arr[1];
   }
+
+  console.log(encodedString);
 }
 
 decodeString('4[ab]');
