@@ -14,4 +14,6 @@ const decodeString = function(s) {
   }
 };
 
+decodeString('4[ab]');
+
 export default decodeString;
