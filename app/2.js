@@ -1,5 +1,6 @@
 // variable to make an encoded_string
 let tempString = '';
+const charHolder = [];
 
 // create a function that take one parameter
 const decodeString = function(s) {
@@ -15,15 +16,22 @@ const decodeString = function(s) {
 
       // separate first k times
       if ( !isNaN(char) ) {
-        console.log (i,char);
+
+        // pupulate array
+        charHolder.push(char);
+        // console.log (i,char);
       } else if ( char.match(/^[A-Za-z]+$/) ) {
         tempString += char;
-        console.log(i,tempString);
+        // console.log(i,tempString);
       }
     }
   }
 };
 
 decodeString('4[ab]');
+
+// add the made encoded_string to array
+charHolder.push(tempString);
+console.log(charHolder);
 
 export default decodeString;
