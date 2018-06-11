@@ -1,3 +1,6 @@
+// variable to make an encoded_string
+let tempString = '';
+
 // create a function that take one parameter
 const decodeString = function(s) {
 
@@ -13,8 +16,9 @@ const decodeString = function(s) {
       // separate first k times
       if ( !isNaN(char) ) {
         console.log (i,char);
-      } else if (char.match(/^[A-Za-z]+$/)) {
-        console.log(i,char);
+      } else if ( char.match(/^[A-Za-z]+$/) ) {
+        tempString += char;
+        console.log(i,tempString);
       }
     }
   }
