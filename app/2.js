@@ -1,6 +1,7 @@
 // variable to make an encoded_string
 let charactersContainer = [],
-    tempString = '';
+    tempString = '',
+    encodedString = '';
 
 // make encode string into an array
 const decodeString = function(s) {
@@ -15,12 +16,25 @@ const createEncodedString = function(arr) {
   let letter  = arr[index];    // keeps track of letters only
   let times   = arr[index -1]; // keeps track of k numbers
   let oddEven = arr.length;    // to decide what tipe of algo
+
+  // loop through charactersContainer
+  for (let i =0; i < arr.length -1; i += 1) {
+    // this uses the most inner characters in
+    // charactersContainer needed only once
+    if(i === 0) {
+      // to create the initial encoded string
+      for(let i = 0; i < times; i += 1) {
+        encodedString += letter;
+      }
+      console.log(encodedString);
+    }
+  }
 }
 
 decodeString('4[ab]');
 
 // add the made encoded_string to array
 // charHolder.push(tempString);
-// createEncodedString(charHolder);
+createEncodedString(charactersContainer);
 
 export default decodeString;
