@@ -9,17 +9,9 @@ const decodeString = function(s) {
   console.log(charactersContainer);
 };
 
-// const createEncodedString = function(arr) {
-//   // holds the encoded string
-//   let encodedString = '';
+const createEncodedString = function(arr) {
 
-//   // loop over the array
-//   for (let i = 0; i < arr[0]; i+= 1) {
-//     encodedString += arr[1];
-//   }
-
-//   console.log(encodedString);
-// }
+}
 
 decodeString('4[ab]');
 
