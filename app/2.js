@@ -36,6 +36,12 @@ const createEncodedString = function(arr) {
       tempString = letter + encodedString;
       index     -= 1;
       oddEven   -= 1;
+    } else if (oddEven % 2 === 0) {
+      encodedString = '';
+      for(let i = 0; i < times; i += 1) {
+        encodedString += tempString;
+      }
+      console.log(encodedString)
     }
   }
 }
