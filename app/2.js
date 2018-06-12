@@ -32,11 +32,14 @@ const createEncodedString = function(arr) {
       letter  = arr[index-1];
       times   = parseInt(arr[index - 2], 10);
 
+    } else if (oddEven % 2 !== 0) {
+      tempString = letter + encodedString;
+      console.log(tempString);
     }
   }
 }
 
-decodeString('4[ab]');
+decodeString('4[b3[a]]');
 
 // add the made encoded_string to array
 // charHolder.push(tempString);
