@@ -33,11 +33,15 @@ const createEncodedString = function(arr) {
       times    = parseInt(arr[index - 2], 10);
 
     } else if (oddEven % 2 !== 0) {
+      // add next letter in decoding string
       tempString = letter + encodedString;
+
+      // advance indexes
       index      -= 1;
       oddEven    -= 1;
 
     } else if (oddEven % 2 === 0) {
+      // ready to create new string
       encodedString = '';
       for(let i = 0; i < times; i += 1) {
         encodedString += tempString;
@@ -51,10 +55,8 @@ const createEncodedString = function(arr) {
   }
 }
 
-decodeString('4[b3[a]]');
-
-// add the made encoded_string to array
-// charHolder.push(tempString);
-createEncodedString(charactersContainer);
+decodeString('4[b3[a]]'); // input
+createEncodedString(charactersContainer); // create the ecoded string
+console.log(encodedString); // check final result
 
 export default decodeString;
