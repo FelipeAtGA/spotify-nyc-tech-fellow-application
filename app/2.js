@@ -26,7 +26,12 @@ const createEncodedString = function(arr) {
       for(let i = 0; i < times; i += 1) {
         encodedString += letter;
       }
-      console.log(encodedString);
+      // advance indexes in charactersContainer
+      index   -= 1;
+      oddEven -= 1;
+      letter  = arr[index-1];
+      times   = parseInt(arr[index - 2], 10);
+
     }
   }
 }
