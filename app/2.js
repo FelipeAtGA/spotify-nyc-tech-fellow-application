@@ -34,7 +34,8 @@ const createEncodedString = function(arr) {
 
     } else if (oddEven % 2 !== 0) {
       tempString = letter + encodedString;
-      console.log(tempString);
+      index     -= 1;
+      oddEven   -= 1;
     }
   }
 }
