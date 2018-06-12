@@ -10,7 +10,11 @@ const decodeString = function(s) {
 };
 
 const createEncodedString = function(arr) {
-
+  // some initial variables and values
+  let index   = arr.length -1; // keeps track of the index in charactersContainer
+  let letter  = arr[index];    // keeps track of letters only
+  let times   = arr[index -1]; // keeps track of k numbers
+  let oddEven = arr.length;    // to decide what tipe of algo
 }
 
 decodeString('4[ab]');
