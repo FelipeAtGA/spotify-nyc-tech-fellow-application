@@ -29,19 +29,24 @@ const createEncodedString = function(arr) {
       // advance indexes in charactersContainer
       index   -= 1;
       oddEven -= 1;
-      letter  = arr[index-1];
-      times   = parseInt(arr[index - 2], 10);
+      letter   = arr[index-1];
+      times    = parseInt(arr[index - 2], 10);
 
     } else if (oddEven % 2 !== 0) {
       tempString = letter + encodedString;
-      index     -= 1;
-      oddEven   -= 1;
+      index      -= 1;
+      oddEven    -= 1;
+
     } else if (oddEven % 2 === 0) {
       encodedString = '';
       for(let i = 0; i < times; i += 1) {
         encodedString += tempString;
       }
-      console.log(encodedString)
+      // advance indexes in charactersContainer
+      index   -= 1;
+      oddEven -= 1;
+      letter   = arr[index-1];
+      times    = parseInt(arr[index - 2], 10);
     }
   }
 }
