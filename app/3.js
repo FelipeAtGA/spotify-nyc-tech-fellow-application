@@ -12,8 +12,9 @@ const changePossibilities = function(amount, arr) {
   for( let i = 0; i <= amount; i += 1) {
     tempArr.push(0);
   }
+
   // iterates through array of coins
-  for( let i=0; i < arr.length; i += 1 ) {
+  for( let i = 0; i < arr.length; i += 1 ) {
     // iterates through all possible coin values
     // under the amount
     while ( value <= amount ) {
@@ -28,8 +29,9 @@ const changePossibilities = function(amount, arr) {
         tempArr[value] = 1;
       }
       value += 1;
-      index += 1;
     }
+    index += 1;
+    value = 0;
   }
   console.log(tempArr);
 }
