@@ -8,6 +8,10 @@ const changePossibilities = function(amount, arr) {
       value  = 0, // coin denomination
       index  = 0; // index of array
 
+  // initialize temp array for calculations
+  for( let i = 0; i <= amount; i += 1) {
+    tempArr.push(0);
+  }
   // iterates through array of coins
   for( let i=0; i < arr.length; i += 1 ) {
     // iterates through all possible coin values
