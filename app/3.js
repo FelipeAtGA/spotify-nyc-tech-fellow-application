@@ -11,6 +11,7 @@ const changePossibilities = function(amount, arr) {
     while ( value <= amount ) {
       console.log(value);
     }
+    value += 1;
   }
 }
 
