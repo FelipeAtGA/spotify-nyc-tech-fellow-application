@@ -15,3 +15,5 @@ const changePossibilities = function(amount, arr) {
 }
 
 changePossibilities(4, [1,2,3]);
+
+export default changePossibilities;
