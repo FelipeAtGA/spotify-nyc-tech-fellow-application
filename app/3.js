@@ -19,10 +19,15 @@ const changePossibilities = function(amount, arr) {
         // and adds previous result and new result
         tempValue = value - arr[index];
         tempArr[value] += tempArr[tempValue];
+      } else {
+        // add one to values of zeros
+        tempArr[value] = 1;
       }
       value += 1;
+      index += 1;
     }
   }
+  console.log(tempArr);
 }
 
 changePossibilities(4, [1,2,3]);
