@@ -1,3 +1,5 @@
+const tempArr = []; // array of posible denominations
+let tempValue = 0;  // stores temp calculations
 // functions computes the number of ways to make the
 // amount of money with coins of the available denominations
 const changePossibilities = function(amount, arr) {
@@ -7,10 +9,13 @@ const changePossibilities = function(amount, arr) {
 
   // iterates through array of coins
   for( let i=0; i < arr.length; i += 1 ) {
-    // iterates through all possible values under the amount
+    // iterates through all possible coin values
+    // under the amount
     while ( value <= amount ) {
-      console.log(value);
-      value += 1;
+      // performs a linear calculation for each value
+      if( value >= arr[index]) {
+
+      }
     }
   }
 }
