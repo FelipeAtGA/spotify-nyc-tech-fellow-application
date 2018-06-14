@@ -10,8 +10,8 @@ const changePossibilities = function(amount, arr) {
     // iterates through all possible values under the amount
     while ( value <= amount ) {
       console.log(value);
+      value += 1;
     }
-    value += 1;
   }
 }
 
